@@ -1,0 +1,58 @@
+xm
+
+Cheat Sheet for Repeater Bot:
+Notice: Commands start with #
+   course [keyword]:     find all the courses that contain the keyword
+   instructor [keyword]:    find all the instructors that contain the keyword
+   help:    show help message
+   time:    show the time when the message was sent
+   stop:    (For bot admins only) stop the bot
+
+Instructor: Manuel Charlemagne
+Courses: VE482 VE477
+
+Instructor: Manuel Charlemagne
+Courses: VE482 VE477
+Instructor: Paul Weng
+Courses: VE280
+Instructor: Mr. Teapot
+Courses: VR418
+Instructor: Yue
+Courses: VE999
+
+Course Code: VE477
+Course Name: Intro to Algorithm
+Instructor: Manuel Charlemagne
+
+Course Code: VE482
+Course Name: Intro to Operating System
+Instructor: Manuel Charlemagne
+Course Code: VE477
+Course Name: Intro to Algorithm
+Instructor: Manuel Charlemagne
+Course Code: VR418
+Course Name: Intro to coffee
+Instructor: Mr. Teapot
+
+I don't know this course
+
+Oh, input the search keyword first...
+
+Oh, input the search keyword first...
+
+You are not qualified to stop me
+
+#stop1
+
+13:31:32
+
+pretender
+
+I really admire Back in Zenzenzense till this days
+
+Red is the color of hero
+
+THE WORLD!
+
+Good night. I am going to sleep
+

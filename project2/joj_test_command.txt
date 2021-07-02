@@ -1,0 +1,15 @@
+bot database/null group/lists/sample 39 		Cannot open the file: database/null
+
+bot database/sample group/lists/null 39 		Cannot open the file: group/lists/null
+
+bot database/sample group/lists/sample 		There are missing arguments. The program exits
+
+bot database/sample group/lists/sample SHILI 	Invalid argument for random settings. Only number is accepted. The program exits
+
+bot database/JICourses.txt group/lists/singleList 40 
+
+bot database/JICourses.txt group/lists/doubleList 404 
+
+bot database/JICourses.txt group/lists/allList 114514 
+
+bot database/JICourses.txt group/lists/allList 2 

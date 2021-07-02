@@ -1,0 +1,282 @@
+281
+VE/VM450,VE/VM450 course evaluation,Bao Shouxing
+VE662,Advanced Topics in Controls,Zhang Jun
+VM552,Mechatronic Systems Design,Ma Chengbin
+VE666,Millimeter-wave and Terahertz Wireless Communications,Han Chong
+VG500,Technical Communication,Manuel Charlemagne
+VM566,Dynamics and control of connected vehicles ,Gabor Orosz
+Vm505,Finite Element Methods,Shen Yongxing
+VE508,Nonlinear and Ultrafast Optics,Wan Wenjie
+VE527,Computer Aided Design of Integrated Circuits,Qian Weikang
+VE550,Information Theory,Han Chong
+VE552,Fiber Optics and Biomedical Optics,Wu Jigang
+VE509,Semiconductor Physics,Mesli
+VE504,Solid State Physics,Bao Hua
+VM518,Advanced Mechanics of Composite Materials,Shane Johnson
+VE572,Methods and Tools for Big Data,Liu Jing
+VE572,Methods and Tools for Big Data,Manuel Charlemagne
+VM555,Engineering Optimization,Li Mian
+VV570,Introduction to Engineering  Numerical Analysis,OLGA DANILKINA
+VV557,Methods of Applied Math II,Horst Hohberger
+VV556,Methods of Applied Math I,Horst Hohberger
+VE540,Applied Quantum Mechanics I,Mateusz Krzyzosiak
+VE655,Wireless Communication Theory,Wang Xudong
+VM541,Mechanical Vibrations,Shen Yanfeng
+VE/VM515,Electrical & Optical and Magnetic Properties of Materials,Zhu Hong
+VM565,Structural & Physical and Chemical Characterization of Materials,Guo Yunlong
+VE539,Lasers,Wan Wenjie
+VM509,Battery Materials: Fundamentals and Applications,Bao Shouxing
+VE530,Electromagnetic Theory I,Chen Songliang
+VG501,Introduction to Graduate Technical Communication,MICHELE MARIE CAMPBELL
+VE/VM506,Selected Topics in Nanotechnology,Morteza Eslamian
+VE560/VM564,Linear Systems,Zhang Jun
+VM513,Continuum Mechanics,Jaehyung Ju
+VE501,Probability and Random Processes,Tang Aimin
+VM514,Non-Linear Fracture Mechanics,Roberto DUGNANI
+VE581,Convolutional Neural Networks for Visual Recognition,Luo Jiajia
+VM520,Advanced Fluid Mechanics,Wang Lipo
+VM583,Manufacturing Processes and  Systems,Thomas Hamade
+VE507,Semiconductor Optoelectronic Materials ,Yang Tian
+VR222,Great Books in World Literature,Paolo Visigalli
+VR265,Introduction to Chinese Philosophy: Understanding Contemporary through Ancient China ,Rockwell Clancy
+VR258,The History of Modern China’s Foreign Relations ,Zhang Zhiyun
+VZ102,Introduction to Chinese Culture,Sa Weiqi
+VR280,Introduction to Modern Chinese Literature,Xuelian Zhang
+VR281,Introduction to China Studies ,Xu Tong
+TH028,Modern Chinese History,Wang Chunying
+TH021,Modern Chinese History,Wang Chunying
+VR380,Topics in Asian Studies,Soong Chul Ro
+VE492,Intro to Artificial Intelligence,Paul Weng
+VE593,Problem solving with AI techniques,Paul Weng
+VR123,Novel into Film ,ANGELA MARGARET GEHLING
+VR309,From Empires to Nation-States: China & Europe and Latin America in Global History,ManuelPerezGarcia
+VR208,Business and Natural Environment,Soong Chul Ro
+VX423,Intrapreneurship,Pradeep Ray
+VM335,Heat Transfer,Bao Hua
+PE001,Physical Education I,Shu La
+PE002,Physical Education II,Song Shun
+PE003,Physical Education III,Song Shun
+PE004,Physical Education IV,Cai Min
+VG441,Supply Chain Management,Shi Cong
+VE216,Intro to Signals and Systems,Long Yong
+VE434,Principles of Photonics,Yang Tian
+VE534,Optics and Photonics,Yang Tian
+VE334,Principles of Optics,Wu Jigang
+VR209,The rise of scientific medicine: a global perspective,Liu Shiyong
+VR102,Chinese History in Global Perspective,Xu Tong
+VY125,Writing and Academic Inquiry,Zhang Lijun
+TH004,Military Theory,Yan Cheng
+TH010,Military Training,Xu Guobin
+VM543,Analytical Dynamics,Shawn Duan
+VX420,Business Basics for Entrepreneurs,Pradeep Ray
+VY223,Creative Writing,Ryan Thorpe
+VM482,Machining Processes,Shen Bin
+VM240,Intro to Dynamics and Vibrations,Shen Yongxing
+VM360,Modeling & Analysis and Control of Dynamic Systems,Luo Jiajia
+VR238,British Empire and “Informal” Imperialism in the Nineteenth-Century,Yu Qiong
+VE320,Intro to Semiconductor Devices,Yang Rui
+VR293,Chinese American Literature,Andrew Yang
+VE413,Monolithic Amplifier Circuits,Tu Changching
+VR121,The Psychology of Sustainability,Stephanie Preston
+VX251,Branding and Brand Management,Li Jie
+VX351,Advanced Branding and Brand Management,Li Jie
+VR361,Philosophical Ethics,Rockwell Clancy
+VX402,Managing a Business,Pradeep Ray
+VX250,Business Communications,Irene Wei
+VM211,Intro to Solid Mechanics,Shen Yongxing
+VM511,Foundation of Solid Mechanics,Shen Yongxing
+VR160,Introduction to World Politics,Soong Chul Ro
+VR369,Politics of International Economic Relations,Soong Chul Ro
+VE556,Image Processing,Long Yong
+VE373,Design of Microprocessor Based Systems,Zheng Gang
+VJ110,Basic Japanese I,Lin Zibo
+VJ111,Basic Japanese II,Lin Zibo
+VY203,Exploring Writing in a Different Voice,Michael Theodore Luongo
+VC209,Chemistry,Thomas Hamade
+VC211,Chemistry Lab,Ting Sun
+VC210,Chemistry,Bao Shouxing
+VP145,General Physics I,NealeHaugen
+VP245,General Physics II,NealeHaugen
+VE472,Methods and Tools for Big Data,Liu Jing
+VE472,Methods and Tools for Big Data,Manuel Charlemagne
+VR223,Arabian Nights in British Literature,Matthew Risling
+VR291,The Otherworlds of Fantasy ,Andrew Yang
+VX451,Luxury and Luxury Marketing,Li Jie
+VR276,Existentialism & Literature,Amalia Jiva
+VM395,Laboratory I,Andrew Yang
+VM395,Laboratory I,Kwee Yan Teh
+VM495,Laboratory II,Kwee Yan Teh
+VE475,Introduction to Cryptography,Manuel Charlemagne
+VM660,Engineering Decision Making,Li Mian
+VG100,Intro to Engineering,Irene Wei
+VG100,Intro to Engineering,Shane Johnson
+VV454,Boundary Value Problems for Partial Differential Equations,Horst Hohberger
+VK250,Principles of Engineering Materials,Chen Qianli
+VE401,Probabilistic Methods in Eng.,Horst Hohberger
+VM235,Thermodynamics,Wang Lipo
+VM384,Engineering Project Management,Thomas Hamade
+VR120,Greek Tragedy,Justin Donald Andrews
+VR242,Happiness and the Meaning of Life,Amalia Jiva
+VE406,Applied Regression Analysis using R,Liu Jing
+VM512,Theory of Elasticity,Roberto DUGNANI
+VM645,Wave Propagation in Elastic Solids,Shen Yanfeng
+VP160,Honors Physics I,Mateusz Krzyzosiak
+VP260,Honors Physics II,Mateusz Krzyzosiak
+VR363,Chinese Society in Contemporary Chinese Cinema,Xuelian Zhang
+TH020,Circumstance and Policy,Hei Bo
+VV216,Calculus IV,ZACHIRI MCKENZI
+VE415,Introduction to MEMS,Yu-Chih Chen
+VV115,Calculus I,ZACHIRI MCKENZI
+VV116,Calculus II,ZACHIRI MCKENZI
+VV215,Calculus III,Liu Jing
+VR150,German Culture,Quanbo Xie
+VW110,German I,Quanbo Xie
+VW111,German II,Quanbo Xie
+VW210,German III,Quanbo Xie
+VW211,German IV,Quanbo Xie
+VW310,German V,Quanbo Xie
+VW311,German VI ,Quanbo Xie
+VR154,Introduction to Psychology,En-Ling Chiao
+TH000,Morals and Ethics & Law Fundamentals,Shi Hongbo
+VX425,Technology Entrepreneurship ,Pradeep Ray
+VE663,Advanced topics in control II,Zhang Jun
+VE460,Control Systems Analysis and Design,Zhang Jun
+VE482,Introduction to Operating Systems,Manuel Charlemagne
+VR101,Introduction to Political Theory,David Paul Barnet
+VV471,Introduction to Numerical Methods,Liu Jing
+VV471,Introduction to Numerical Methods,Manuel Charlemagne
+VE351,Digital Signal Processing and Analysis,Tang Aimin
+VE451,Digital Signal Processing and Analysis,Tang Aimin
+VR255,Digital Photography,Manuel Charlemagne
+VE455,Digital Communication Signals & Systems,Wang Xudong
+VE312,Digital Integrated Circuits,Dan Yaping
+VE488,Data Mining and Machine Learning,Yuekai Sun
+VE281,Data Structures and Algorithms,Qian Weikang
+VM455,Introduction to Data-driven Engineering Design,Bi Youyi
+VR253,Culture & Technology and Silicon Valley,Irene Wei
+VR364,Literature and the Environment ,JOELLE ELIZABETH TYBON
+VY202,Travel Writing in Shanghai and Beyond,Michael Theodore Luongo
+VE689,Wireless Network,Wang Xudong
+VR207,History of Modern Japan,Xu Hang
+VP141,Physics Lab I,NealeHaugen
+VP241,Physics Lab II,Mateusz Krzyzosiak
+VP140,Physics I,Mateusz Krzyzosiak
+VP150,Physics I,Mateusz Krzyzosiak
+VP240,Physics II,Wan Wenjie
+VP250,Physics II,Mateusz Krzyzosiak
+VE538,Optical Waves in Crystals,Wu Jigang
+VE421,Properties of Transistors,Yuljae Cho
+VE420,Physical Principles Underlying Smart Devices,Chen Qianli
+VM467,Introduction to Robotics,Yu Zheng
+VE485,Optimization in Machine Learning,Huang Xiaolin
+VE445,Introduction to Machine Learning,Li Shuai
+VM405,Finite Elements in Mechanical Engineering,Shen Yongxing
+VM305,Introduction to Finite Elements in Mechanical Engineering,Shen Yongxing
+VM311,Strength of Materials,Roberto DUGNANI
+VM382,Mechanical Behavior of Materials,Zhu Hong
+VK330,Thermodynamics of Materials,Wang Yanming
+VK242,Physics of Materials,Chen Qianli
+VK350,Structure of Materials,Bao Shouxing
+VK360,Materials Lab I,Guo Yunlong
+VR140,Comparative Governments and Politics,Soong Chul Ro
+VR241,Comparative Literature: Fairy Tales,Amalia Jiva
+TH012,Introduction to Mao Zedong's Thoughts and Theoretical System of Socialism with Chinese Characteristics,Chen Peng
+TH029,Introduction to Mao Zedong's Thoughts and Theoretical System of Socialism with Chinese Characteristics,Huang Qingqiao
+VZ011,Chinese Language (level 1 part 1),Wang Jun
+VZ012,Chinese Language (level 1 part 2),Wang Jun
+VZ031,Chinese Language (level 3 part 1),Wang Jun
+VZ032,Chinese Language (level 3 part 2),Wang Jun
+VZ021,Chinese Language (level 2 part 1),Wang Jun
+VZ022,Chinese Language (level 2 part 2),Wang Jun
+VZ051,Chinese Language (level 5 part 1) ,Wang Jun
+VZ052,Chinese Language (level 5 part 2),Wang Jun
+VZ104,Introduction to Chinese Language,Wang Jun
+VZ200,Comprehensive Chinese II,Wang Jun
+VZ003,Chinese III,Anna
+VM458,Automotive Engineering,Kong Lingxun
+VM320,Fluid Mechanics I,Chien-Pin Chen
+VM524,Turbulence,Wang Lipo
+VR246,Introduction to Comics and Graphic Novels ,JOELLE ELIZABETH TYBON
+VE438,Advanced Lasers and Optics Laboratory,Wan Wenjie
+VM421,Thermal Fluids Systems Design,Morteza Eslamian
+VM432,Combustion,Wang Lipo
+VR292,Literature of Love,Ryan Thorpe
+VC301,Introduction to Environmental & Air Pollution Control,Thomas Hamade
+VR203,Food in Modern East Asian History,Xu Tong
+VP390,Modern Physics,Mateusz Krzyzosiak
+VM414,Advanced Quality Engineering ,Jian Liu
+VE458,Biomedical Intrumentation and Design,Luo Jiajia
+VX422,E-Business Management,Pradeep Ray
+VE311,Electronic Circuits,Tu Changching
+VR333,Artificial Intelligence in Film,Becky HSU
+VR236,Film Art and History,Nicholas Scott Welch-Bolen
+VE230,Electromagnetics I,Mesli
+VE215,Intro to Circuits,Chen Songliang
+VX440,Introduction to Social Entrepreneurship,Soong Chul Ro
+VR301,Sociological Principles and Problems,David Paul Barnet
+VR381,Introduction to Social Science Research Design,Soong Chul Ro
+VE203,Discrete Mathematics,ZACHIRI MCKENZI
+VR318,Science Fiction,PETER JOHN WEISE
+VR332,Cyborg Anthropology,Emma McGuirk
+VE300,TechComm,Irene Wei
+VE280,Programming & Elem. Data Structures,Qian Weikang
+VE477,Introduction to Algorithms,Manuel Charlemagne
+VE450,Major Design Experience(MDE),Li Mian
+VE450,Major Design Experience(MDE),Ma Chengbin
+VV214,Linear Algebra,OLGA DANILKINA
+VV417,Linear Algebra,Liu Jing
+VV256,Honors Calculus IV,Liu Jing
+VV286,Honors Mathematics IV,Horst Hohberger
+VM466,Statistical Quality Control,Dragan Djurdjanovic
+VY100,Academic Writing I,Nicholas Scott Welch-Bolen
+VE444,Networks,YifeiZhu
+VR251,Aesthetics,Amalia Jiva
+VG496,Professional Ethics,Rockwell Clancy
+VM434,Materials for Energy Conversion,Chen Qianli
+VM461,Automatic Control,Zhang Jun
+VR235,Introduction to the History of Art,Aline Chevalier
+VY298,Introduction to British Literature,Matthew Risling
+VY230,Introduction to Short Story and Novel,Ryan Thorpe
+VY200,Academic Writing II,Ryan Thorpe
+VR340,Shakespeare Studies ,Ryan Thorpe
+VR124,Fashion & Fiction and Feminism,ANGELA MARGARET GEHLING
+VG101,Intro to Computers & Programming,Manuel Charlemagne
+VE370,Intro to Computer Organization,Zheng Gang
+VE489,Computer Networks,Wang Xudong
+VM523,Computational  Fluid Dynamics,Wang Lipo
+VR354,Introduction to Cognitive Psychology,En-Ling Chiao
+VR259,Memory: A New Approach to China’s 20th Century History ,Chan Yang
+VM450,Design and Manufacturing III,Li Mian
+VM450,Design and Manufacturing III,Ma Chengbin
+VM250,Design and Manufacturing I,Jaehyung Ju
+VM350,Design and Manufacturing II,Jaehyung Ju
+VY324,Writing Poetry,Ryan Thorpe
+VY240,Introduction to Poetry ,PETER JOHN WEISE
+VR112,Introduction to Language and Linguistics,Paolo Visigalli
+VE414,Bayesian Analysis,Liu Jing
+VG450,Global Multidisciplinary Design Project I,Li Mian
+VG450,Global Multidisciplinary Design Project I,Ma Chengbin
+VG451,Global Multidisciplinary Design Project II,Li Mian
+VG451,Global Multidisciplinary Design Project II,Ma Chengbin
+VM508,Introduction to Soft Matter Physics,Guo Yunlong
+VR206,China in the Early Modern World,Xu Tong
+VE270,Introduction to Logic Design,Zheng Gang
+VE456,Quantum Information and Computation,NanaLiu
+VM010,Machineshop Training,Li Mingjian
+VM020,Machineshop Training I,Tao Bo
+VE562,Nonlinear Systems and Control,Zhang Jun
+VE441,App Development for Entrepreneurs ,Pradeep Ray
+VE441,App Development for Entrepreneurs ,Fethi Rabhi
+VE449,Mobile Applications for Entrepreneurs,Pradeep Ray
+VR249,Anthropology of Food,Emma McGuirk
+TH007,Marxism Basic Theory,Liu Liping
+VM517,Mechanical Properties of Polymers,Guo Yunlong
+VM530,Advanced Heat Transfer,Bao Hua
+VM531,Advanced Conduction and Radiation Heat Transfer,Bao Hua
+VM532,Advanced Convection,Zhang Qiang
+VV156,Honors Calculus II,Liu Jing
+VV255,Honors Calculus III,Liu Jing
+VV186,Honors Mathematics II,Horst Hohberger
+VV285,Honors Mathematics III,Horst Hohberger
+VM412,Advanced Strength of Materials,Roberto DUGNANI
+VE496,Advanced Technical Communication,Irene Wei

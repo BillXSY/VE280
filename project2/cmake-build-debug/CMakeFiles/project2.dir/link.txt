@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/project2.dir/main.cpp.o CMakeFiles/project2.dir/bot.cpp.o CMakeFiles/project2.dir/rand.cpp.o  -o project2 

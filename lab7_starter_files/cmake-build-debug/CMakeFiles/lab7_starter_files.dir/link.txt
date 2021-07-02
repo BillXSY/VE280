@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab7_starter_files.dir/simpletest.cpp.o CMakeFiles/lab7_starter_files.dir/course.cpp.o  -o lab7_starter_files 
