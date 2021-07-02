@@ -1,1 +1,1 @@
-在 \\wsl$\Ubuntu-20.04\root\VE280 中找不到 CMakeLists.txt 选择 CMakeLists.txt
+在 C:\Users\71401\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\root\VE280 中找不到 CMakeLists.txt 选择 CMakeLists.txt
