@@ -56,6 +56,9 @@ void Deck::shuffle(int n) {
 }
 
 Card Deck::deal() {
+    if (DeckSize - next == 0) {
+        throw DeckEmpty{};
+    }
     return deck[next++];
 }
 
