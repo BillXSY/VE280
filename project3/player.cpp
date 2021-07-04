@@ -4,13 +4,14 @@
 #include <iostream>
 #include "player.h"
 
+string Player::getName() {
+    return name;
+}
+
 int Player::getID() {
     return ID;
 }
 
-string Player::getName() {
-    return name;
-}
 
 Team Player::getTeam() {
     return team;
@@ -32,16 +33,6 @@ public:
     virtual void expose(Card c);
 
     virtual void shuffled();
-/*    virtual string getName();
-//    // EFFECTS: get the name of the player.
-//
-//    virtual int getID();
-//    // EFFECTS: get the ID of the player.
-//
-//    virtual Team getTeam();
-//    // EFFECTS: get the team of the player.
-//
-//    virtual void setPlayer(Team tm, int id);*/
 };
 
 int SimplePlayer::bet(unsigned int bankroll, unsigned int minimum) {
@@ -51,6 +42,7 @@ int SimplePlayer::bet(unsigned int bankroll, unsigned int minimum) {
 bool SimplePlayer::draw(Card dealer, const Hand &player) {
     int hand_count = player.handValue().count;
     bool isSoft = player.handValue().soft;
+
     if (!isSoft && hand_count < 12) {
         return true;
     } else if (!isSoft && hand_count == 12) {
@@ -81,6 +73,43 @@ bool SimplePlayer::draw(Card dealer, const Hand &player) {
 void SimplePlayer::expose(Card c) {}
 
 void SimplePlayer::shuffled() {}
+
+class CountingPlayer : SimplePlayer {
+private:
+    int count;
+public:
+    CountingPlayer();
+
+    int bet(unsigned int bankroll, unsigned int minimum);
+
+    void expose(Card c);
+
+    void shuffled();
+};
+
+CountingPlayer::CountingPlayer() {
+    count = 0;
+}
+
+int CountingPlayer::bet(unsigned int bankroll, unsigned int minimum) {
+    if (count >= 2 && bankroll >= 2 * minimum) {
+        return int(2 * minimum);
+    }
+    return minimum;
+}
+
+
+void CountingPlayer::expose(Card c) {
+    if (c.spot <= 4) {
+        count++;
+    } else if (c.spot >= 8) {
+        count--;
+    }
+}
+
+void CountingPlayer::shuffled() {
+    count = 0;
+}
 
 
 
