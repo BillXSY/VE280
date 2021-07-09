@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/root/VE280/project3/blackjack.cpp">
+			<Option target="project3"/>
+		</Unit>
 		<Unit filename="/root/VE280/project3/card.cpp">
 			<Option target="project3"/>
 		</Unit>
@@ -100,9 +103,6 @@
 			<Option target="project3"/>
 		</Unit>
 		<Unit filename="/root/VE280/project3/hand.h">
-			<Option target="project3"/>
-		</Unit>
-		<Unit filename="/root/VE280/project3/main.cpp">
 			<Option target="project3"/>
 		</Unit>
 		<Unit filename="/root/VE280/project3/player.cpp">

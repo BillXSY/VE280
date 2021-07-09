@@ -14,6 +14,6 @@ add_executable(project3
         player.h
         rand.cpp
         rand.h
-        main.cpp
         hand.cpp
-        player.cpp)
+        player.cpp
+        blackjack.cpp)

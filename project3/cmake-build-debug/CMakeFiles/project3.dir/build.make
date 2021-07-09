@@ -96,22 +96,9 @@ CMakeFiles/project3.dir/rand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project3.dir/rand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/VE280/project3/rand.cpp -o CMakeFiles/project3.dir/rand.cpp.s
 
-CMakeFiles/project3.dir/main.cpp.o: CMakeFiles/project3.dir/flags.make
-CMakeFiles/project3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project3.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project3.dir/main.cpp.o -c /root/VE280/project3/main.cpp
-
-CMakeFiles/project3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/VE280/project3/main.cpp > CMakeFiles/project3.dir/main.cpp.i
-
-CMakeFiles/project3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/VE280/project3/main.cpp -o CMakeFiles/project3.dir/main.cpp.s
-
 CMakeFiles/project3.dir/hand.cpp.o: CMakeFiles/project3.dir/flags.make
 CMakeFiles/project3.dir/hand.cpp.o: ../hand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project3.dir/hand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project3.dir/hand.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project3.dir/hand.cpp.o -c /root/VE280/project3/hand.cpp
 
 CMakeFiles/project3.dir/hand.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/project3.dir/hand.cpp.s: cmake_force
 
 CMakeFiles/project3.dir/player.cpp.o: CMakeFiles/project3.dir/flags.make
 CMakeFiles/project3.dir/player.cpp.o: ../player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project3.dir/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project3.dir/player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project3.dir/player.cpp.o -c /root/VE280/project3/player.cpp
 
 CMakeFiles/project3.dir/player.cpp.i: cmake_force
@@ -135,14 +122,27 @@ CMakeFiles/project3.dir/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project3.dir/player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/VE280/project3/player.cpp -o CMakeFiles/project3.dir/player.cpp.s
 
+CMakeFiles/project3.dir/blackjack.cpp.o: CMakeFiles/project3.dir/flags.make
+CMakeFiles/project3.dir/blackjack.cpp.o: ../blackjack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project3.dir/blackjack.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project3.dir/blackjack.cpp.o -c /root/VE280/project3/blackjack.cpp
+
+CMakeFiles/project3.dir/blackjack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project3.dir/blackjack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/VE280/project3/blackjack.cpp > CMakeFiles/project3.dir/blackjack.cpp.i
+
+CMakeFiles/project3.dir/blackjack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project3.dir/blackjack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/VE280/project3/blackjack.cpp -o CMakeFiles/project3.dir/blackjack.cpp.s
+
 # Object files for target project3
 project3_OBJECTS = \
 "CMakeFiles/project3.dir/card.cpp.o" \
 "CMakeFiles/project3.dir/deck.cpp.o" \
 "CMakeFiles/project3.dir/rand.cpp.o" \
-"CMakeFiles/project3.dir/main.cpp.o" \
 "CMakeFiles/project3.dir/hand.cpp.o" \
-"CMakeFiles/project3.dir/player.cpp.o"
+"CMakeFiles/project3.dir/player.cpp.o" \
+"CMakeFiles/project3.dir/blackjack.cpp.o"
 
 # External object files for target project3
 project3_EXTERNAL_OBJECTS =
@@ -150,9 +150,9 @@ project3_EXTERNAL_OBJECTS =
 project3: CMakeFiles/project3.dir/card.cpp.o
 project3: CMakeFiles/project3.dir/deck.cpp.o
 project3: CMakeFiles/project3.dir/rand.cpp.o
-project3: CMakeFiles/project3.dir/main.cpp.o
 project3: CMakeFiles/project3.dir/hand.cpp.o
 project3: CMakeFiles/project3.dir/player.cpp.o
+project3: CMakeFiles/project3.dir/blackjack.cpp.o
 project3: CMakeFiles/project3.dir/build.make
 project3: CMakeFiles/project3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/VE280/project3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable project3"

@@ -123,6 +123,33 @@ project3/fast:
 	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/build
 .PHONY : project3/fast
 
+blackjack.o: blackjack.cpp.o
+
+.PHONY : blackjack.o
+
+# target to build an object file
+blackjack.cpp.o:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/blackjack.cpp.o
+.PHONY : blackjack.cpp.o
+
+blackjack.i: blackjack.cpp.i
+
+.PHONY : blackjack.i
+
+# target to preprocess a source file
+blackjack.cpp.i:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/blackjack.cpp.i
+.PHONY : blackjack.cpp.i
+
+blackjack.s: blackjack.cpp.s
+
+.PHONY : blackjack.s
+
+# target to generate assembly for a file
+blackjack.cpp.s:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/blackjack.cpp.s
+.PHONY : blackjack.cpp.s
+
 card.o: card.cpp.o
 
 .PHONY : card.o
@@ -204,33 +231,6 @@ hand.cpp.s:
 	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/hand.cpp.s
 .PHONY : hand.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 player.o: player.cpp.o
 
 .PHONY : player.o
@@ -294,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project3"
+	@echo "... blackjack.o"
+	@echo "... blackjack.i"
+	@echo "... blackjack.s"
 	@echo "... card.o"
 	@echo "... card.i"
 	@echo "... card.s"
@@ -303,9 +306,6 @@ help:
 	@echo "... hand.o"
 	@echo "... hand.i"
 	@echo "... hand.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... player.o"
 	@echo "... player.i"
 	@echo "... player.s"

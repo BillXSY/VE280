@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/project3.dir/blackjack.cpp.o"
   "CMakeFiles/project3.dir/card.cpp.o"
   "CMakeFiles/project3.dir/deck.cpp.o"
   "CMakeFiles/project3.dir/hand.cpp.o"
-  "CMakeFiles/project3.dir/main.cpp.o"
   "CMakeFiles/project3.dir/player.cpp.o"
   "CMakeFiles/project3.dir/rand.cpp.o"
   "project3"

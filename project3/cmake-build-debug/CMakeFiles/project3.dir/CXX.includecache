@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+/root/VE280/project3/blackjack.cpp
+string
+-
+iostream
+-
+iomanip
+-
+cstdlib
+-
+cassert
+-
+rand.h
+/root/VE280/project3/rand.h
+deck.h
+/root/VE280/project3/deck.h
+hand.h
+/root/VE280/project3/hand.h
+player.h
+/root/VE280/project3/player.h
+card.h
+/root/VE280/project3/card.h
+
 /root/VE280/project3/card.h
 string
 -
@@ -17,20 +39,6 @@ card.h
 /root/VE280/project3/hand.h
 card.h
 /root/VE280/project3/card.h
-
-/root/VE280/project3/main.cpp
-card.h
-/root/VE280/project3/card.h
-deck.h
-/root/VE280/project3/deck.h
-hand.h
-/root/VE280/project3/hand.h
-player.h
-/root/VE280/project3/player.h
-rand.h
-/root/VE280/project3/rand.h
-iostream
--
 
 /root/VE280/project3/player.h
 hand.h
