@@ -12,14 +12,18 @@ int Player::getID() {
     return ID;
 }
 
-
 Team Player::getTeam() {
     return team;
 }
 
 void Player::setPlayer(Team tm, int id) {
-    team = tm;
-    ID = id;
+    this->team = tm;
+    this->ID = id;
+    if (tm == SOSBrigade) {
+        this->name = SOS_Name[id - 1];
+    } else {
+        this->name = SC_Name[id - 1];
+    }
 }
 
 class SimplePlayer : Player {
@@ -95,7 +99,7 @@ int CountingPlayer::bet(unsigned int bankroll, unsigned int minimum) {
     if (count >= 2 && bankroll >= 2 * minimum) {
         return int(2 * minimum);
     }
-    return minimum;
+    return int(minimum);
 }
 
 
