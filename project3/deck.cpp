@@ -5,6 +5,8 @@
 #include "deck.h"
 #include <iostream>
 
+using namespace std;
+
 Deck::Deck() {
     next = 0;
     for (int i = 0; i < DeckSize; ++i) {
@@ -14,6 +16,7 @@ Deck::Deck() {
 //    for (int i = 0; i < DeckSize; ++i) {
 //        std::cout << SuitNames[this->deck[i].suit] << ' ' << SpotNames[this->deck[i].spot] << std::endl;
 //    }
+//    cout << "\n\n\n";
 }
 
 void Deck::reset() {
@@ -22,9 +25,6 @@ void Deck::reset() {
         this->deck[i].spot = Spot(i % 13);
         this->deck[i].suit = Suit(i / 13 % 4);
     }
-//    for (int i = 0; i < DeckSize; ++i) {
-//        std::cout << SuitNames[this->deck[i].suit] << ' ' << SpotNames[this->deck[i].spot] << std::endl;
-//    }
 }
 
 void Deck::shuffle(int n) {
@@ -35,24 +35,20 @@ void Deck::shuffle(int n) {
         rslt[index++] = this->deck[right++];
         rslt[index++] = this->deck[left++];
     }
-    if (left == n - 1) {
+    if (left == n) {
         while (right < 52) {
             rslt[index++] = this->deck[right++];
         }
     }
-    if (right == 51) {
+    if (right == 52) {
         while (left < n) {
             rslt[index++] = this->deck[left++];
         }
     }
-
     for (int i = 0; i < DeckSize; ++i) {
         this->deck[i] = rslt[i];
     }
-
-//    for (auto & i : this->deck) {
-//        std::cout << SuitNames[i.suit] << ' ' << SpotNames[i.spot] << std::endl;
-//    }
+    next = 0;
 }
 
 Card Deck::deal() {

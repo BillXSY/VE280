@@ -53,17 +53,19 @@ public:
 };
 
 extern Player *get_Player(string &dealerSide, string &playerType, int &ID);
-// EFFECTS: get a pointer to a player.
-// "dealerSide" describes whether the dealer is from 
-// SOS Brigade or Stardust Crusade.
+// EFFECTS: get a pointer to a player.
+
+// "dealerSide" describes whether the dealer is from SOS Brigade or Stardust Crusade.
 // This depends on the last program argument: [sos|sc].
 // sc means the dealer team is Stardust Crusaders,
 // sos means the dealer team is SOS Brigade.
-// "playerType" describes whether Koizumi Itzuki and 
-// Mohammed Avdol are simple player or count player.
+
+// "playerType" describes whether Koizumi Itzuki and Mohammed Avdol are simple player or count player.
 // This depends on the penultimate program argument: [simple|counting].
+
 // If this argument is "simple", then Itzuki and Avdol are simple players.
 // If this argument is "counting", then Itzuki and Avdol are countingplayers.
-// "ID" is the player's ID.
+
+// "ID" is the player's ID.
 
 #endif /* __PLAYER_H__ */
