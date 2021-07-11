@@ -119,7 +119,7 @@ void deal_d(Deck *deck, Player *player, Card *card_d, Hand *hand_d, bool ifFaceU
 
 // MODIFIES: hand_player
 // EFFECTS: draw a new face-up card for player
-void deal_player(Deck *deck, Player *player, Card *card_player, Hand *hand_player, int &PlayerCardCount) {
+void deal_p(Deck *deck, Player *player, Card *card_player, Hand *hand_player, int &PlayerCardCount) {
     string playerName = player->getName();
     if (deck->cardsLeft() == 0) {
         string s;
@@ -247,10 +247,10 @@ int main(int argc, char const *argv[]) {
             int PlayerCardCount = 0;
             int DealerCardCount = 0;
 
-            deal_player(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);//one face-up to player
+            deal_p(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);//one face-up to player
             deal_d(deck, Players[currPlayer], card_dealer, hand_dealer, true,
                    Dealers[currDealer], DealerCardCount);//one face-up to dealer
-            deal_player(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);//one face-up to player
+            deal_p(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);//one face-up to player
             deal_d(deck, Players[currPlayer], card_dealer2, hand_dealer, false,
                    Dealers[currDealer], DealerCardCount);//one face-down to dealer
 
@@ -265,7 +265,7 @@ int main(int argc, char const *argv[]) {
             try {
                 while (Players[currPlayer]->draw(*card_dealer, *hand_player) && hand_player->handValue().count <= 21) {
 //                    cout << hand_player->handValue().count << ' ';
-                    deal_player(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);
+                    deal_p(deck, Players[currPlayer], card_player, hand_player, PlayerCardCount);
                 }
             }
             catch (string s) {
