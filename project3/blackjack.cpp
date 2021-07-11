@@ -165,7 +165,6 @@ void compare(Hand *hand_d, Hand *hand_p, int *bankroll, int const *wager, const 
     }
 }
 
-
 int main(int argc, char const *argv[]) {
 //    Players initialization
     string player_type = argv[3];
