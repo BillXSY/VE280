@@ -2,19 +2,24 @@
 // Created by 71401 on 2021/7/3.
 //
 
-
 #include "hand.h"
 
+// EFFECTS: establishes an empty blackjack hand.
 Hand::Hand() {
     this->curValue.count = 0;
     this->curValue.soft = false;
 }
 
+// MODIFIES: this
+// EFFECTS: discards any cards presently held, restoring the state
+// of the hand to that of an empty blackjack hand.
 void Hand::discardAll() {
     this->curValue.count = 0;
     this->curValue.soft = false;
 }
 
+// MODIFIES: this
+// EFFECTS: adds the card "c" to those presently held.
 void Hand::addCard(Card c) {
     if (c.spot < 9) {
         this->curValue.count += (c.spot + 2);
@@ -26,6 +31,7 @@ void Hand::addCard(Card c) {
     }
 }
 
+// EFFECTS: returns the present value of the blackjack hand.
 HandValue Hand::handValue() const {
     if (!curValue.soft) {
         return curValue;
@@ -34,7 +40,7 @@ HandValue Hand::handValue() const {
         if (this->curValue.count < 12) {
             AceValue.count = curValue.count + 10;
             AceValue.soft = true;
-        } else if (this->curValue.count > 12) {
+        } else if (this->curValue.count >= 12) {
             AceValue.count = curValue.count;
             AceValue.soft = false;
         }

@@ -7,18 +7,19 @@
 
 using namespace std;
 
+// EFFECTS: constructs a "newly opened" deck of cards.  first the
+// spades from 2-A, then the hearts, then the clubs, then the
+// diamonds.  The first card dealt should be the 2 of Spades.
 Deck::Deck() {
     next = 0;
     for (int i = 0; i < DeckSize; ++i) {
         this->deck[i].spot = Spot(i % 13);
         this->deck[i].suit = Suit(i / 13 % 4);
     }
-//    for (int i = 0; i < DeckSize; ++i) {
-//        std::cout << SuitNames[this->deck[i].suit] << ' ' << SpotNames[this->deck[i].spot] << std::endl;
-//    }
-//    cout << "\n\n\n";
 }
 
+// EFFECTS: resets the deck to the state of a "newly opened" deck
+// of cards:
 void Deck::reset() {
     next = 0;
     for (int i = 0; i < DeckSize; ++i) {
@@ -27,6 +28,9 @@ void Deck::reset() {
     }
 }
 
+// REQUIRES: n is between 0 and 52, inclusive.
+// MODIFIES: this
+// EFFECTS: cut the deck into two segments:
 void Deck::shuffle(int n) {
     int left = 0, right = n;
     Card rslt[DeckSize];
@@ -51,6 +55,8 @@ void Deck::shuffle(int n) {
     next = 0;
 }
 
+// MODIFIES: this
+// EFFECTS: returns the next card to be dealt.  If no cards remain, throws an instance of DeckEmpty.
 Card Deck::deal() {
     if (DeckSize - next == 0) {
         throw DeckEmpty{};
@@ -58,6 +64,7 @@ Card Deck::deal() {
     return deck[next++];
 }
 
+// EFFECTS: returns the number of cards in the deck that have not been dealt since the last reset/shuffle.
 int Deck::cardsLeft() {
     return DeckSize - next;
 }

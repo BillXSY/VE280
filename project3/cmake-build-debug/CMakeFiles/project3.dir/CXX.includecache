@@ -32,12 +32,6 @@ player.h
 string
 -
 
-/root/VE280/project3/deck.cpp
-deck.h
-/root/VE280/project3/deck.h
-iostream
--
-
 /root/VE280/project3/deck.h
 card.h
 /root/VE280/project3/card.h
@@ -45,12 +39,6 @@ card.h
 /root/VE280/project3/hand.h
 card.h
 /root/VE280/project3/card.h
-
-/root/VE280/project3/player.cpp
-iostream
--
-player.h
-/root/VE280/project3/player.h
 
 /root/VE280/project3/player.h
 hand.h
