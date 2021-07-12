@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/project4.dir/BinaryTree.cpp.o CMakeFiles/project4.dir/dbc.cpp.o CMakeFiles/project4.dir/test.cpp.o -o project4 
