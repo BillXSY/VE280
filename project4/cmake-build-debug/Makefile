@@ -169,33 +169,6 @@ BinaryTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/BinaryTree.cpp.s
 .PHONY : BinaryTree.cpp.s
 
-dbc.o: dbc.cpp.o
-
-.PHONY : dbc.o
-
-# target to build an object file
-dbc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.o
-.PHONY : dbc.cpp.o
-
-dbc.i: dbc.cpp.i
-
-.PHONY : dbc.i
-
-# target to preprocess a source file
-dbc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.i
-.PHONY : dbc.cpp.i
-
-dbc.s: dbc.cpp.s
-
-.PHONY : dbc.s
-
-# target to generate assembly for a file
-dbc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.s
-.PHONY : dbc.cpp.s
-
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -235,9 +208,6 @@ help:
 	@echo "... BinaryTree.o"
 	@echo "... BinaryTree.i"
 	@echo "... BinaryTree.s"
-	@echo "... dbc.o"
-	@echo "... dbc.i"
-	@echo "... dbc.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

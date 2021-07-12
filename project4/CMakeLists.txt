@@ -8,6 +8,5 @@ include_directories(.)
 add_executable(project4
         BinaryTree.cpp
         BinaryTree.h
-        dbc.cpp
         NodeInfo.h
         test.cpp)

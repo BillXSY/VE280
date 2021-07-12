@@ -4,10 +4,6 @@
 CMakeFiles/project4.dir/BinaryTree.cpp.o: ../BinaryTree.cpp
 CMakeFiles/project4.dir/BinaryTree.cpp.o: ../BinaryTree.h
 
-CMakeFiles/project4.dir/dbc.cpp.o: ../BinaryTree.h
-CMakeFiles/project4.dir/dbc.cpp.o: ../NodeInfo.h
-CMakeFiles/project4.dir/dbc.cpp.o: ../dbc.cpp
-
 CMakeFiles/project4.dir/test.cpp.o: ../BinaryTree.h
 CMakeFiles/project4.dir/test.cpp.o: ../test.cpp
 

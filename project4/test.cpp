@@ -24,6 +24,10 @@ void nodePrint(Node *x) {
 }
 
 int main() {
+    BinaryTree BT(1);
+    BinaryTree BT2(BT);
+
+
     vector<nodeValue> source = {4, 2, 5, 7, 3, "$", "@", "hey", "xm", 8, 9};
     BinaryTree tree(source);
     BinaryTree waste = tree;
