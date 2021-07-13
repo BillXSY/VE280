@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.cpp
-iostream
--
-vector
--
-fstream
--
-sstream
--
-string
--
-cstdlib
--
-algorithm
--
-BinaryTree.h
-/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
-
 /Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
 string
 -
@@ -31,4 +13,26 @@ vector
 -
 variant
 -
+
+/Users/bill/CLionProjects/VE280/VE280/project4/NodeInfo.h
+BinaryTree.h
+/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
+string
+-
+iostream
+-
+
+/Users/bill/CLionProjects/VE280/VE280/project4/dbc.cpp
+iostream
+-
+fstream
+-
+algorithm
+-
+string
+-
+BinaryTree.h
+/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
+NodeInfo.h
+/Users/bill/CLionProjects/VE280/VE280/project4/NodeInfo.h
 

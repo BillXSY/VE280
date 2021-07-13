@@ -169,32 +169,32 @@ BinaryTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/BinaryTree.cpp.s
 .PHONY : BinaryTree.cpp.s
 
-test.o: test.cpp.o
+dbc.o: dbc.cpp.o
 
-.PHONY : test.o
+.PHONY : dbc.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/test.cpp.o
-.PHONY : test.cpp.o
+dbc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.o
+.PHONY : dbc.cpp.o
 
-test.i: test.cpp.i
+dbc.i: dbc.cpp.i
 
-.PHONY : test.i
+.PHONY : dbc.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/test.cpp.i
-.PHONY : test.cpp.i
+dbc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.i
+.PHONY : dbc.cpp.i
 
-test.s: test.cpp.s
+dbc.s: dbc.cpp.s
 
-.PHONY : test.s
+.PHONY : dbc.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/test.cpp.s
-.PHONY : test.cpp.s
+dbc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project4.dir/build.make CMakeFiles/project4.dir/dbc.cpp.s
+.PHONY : dbc.cpp.s
 
 # Help Target
 help:
@@ -208,9 +208,9 @@ help:
 	@echo "... BinaryTree.o"
 	@echo "... BinaryTree.i"
 	@echo "... BinaryTree.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... dbc.o"
+	@echo "... dbc.i"
+	@echo "... dbc.s"
 .PHONY : help
 
 

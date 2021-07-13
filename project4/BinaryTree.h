@@ -74,7 +74,7 @@ public:
     // Deep copy constructor
     BinaryTree(const BinaryTree &tree);
 
-    // EFFECTS: Construct a binary tree with a list of values, either an integer as value of the node or an empty node flag
+    /*// EFFECTS: Construct a binary tree with a list of values, either an integer as value of the node or an empty node flag
     // The empty flag can be any string. The construction will follow the rule of a complete binary tree.
     // Ex. list {0,1,2,3,"","",6,7} will result in a binary tree below
     //           0
@@ -84,7 +84,7 @@ public:
     //       / \   / \
     //      3         6
     //     /
-    //    7
+    //    7*/
     BinaryTree(std::vector<nodeValue> &source);
 
     // todo: implement this
@@ -100,7 +100,7 @@ public:
     Node *find(const int &key) const;
 
     // todo: implement this
-    // EFFECTS: Return the path from the root node to the node with value {key}.
+    /*// EFFECTS: Return the path from the root node to the node with value {key}.
     // The path is encoded by a string only containing '0' and '1'. Each
     // character, from left to right, shows whether to go left (encoded
     // by ‘0’) or go right (encoded by ‘1’) from a node can lead to the
@@ -125,11 +125,11 @@ public:
     // If {key} is in root node, then return an empty string.
     // If {key} is not in the tree, then return "-1".
     // You can assume that the value of all the nodes are unique in a binary
-    // tree.
+    // tree.*/
     std::string findPath(const int &value) const;
 
     // todo: implement this
-    // EFFECTS: Return the terminal node if we can go through the tree starting from the root node and along the {path}.
+    /*// EFFECTS: Return the terminal node if we can go through the tree starting from the root node and along the {path}.
     // By "can go through the tree", every node along the path should be not null.
     // If we encounter a null node on the halfway, the visit fails.
     //
@@ -138,7 +138,7 @@ public:
     // by ‘0’) or go right (encoded by ‘1’) from the current node
 
     // Return the root node if {path} is empty
-    // Return null if we can not go through the tree
+    // Return null if we can not go through the tree*/
     Node *visitThroughPath(const std::string &path) const;
 
     // todo: implement this
@@ -147,7 +147,7 @@ public:
     int sum() const;
 
     // todo: implement this
-    // EFFECTS: Return the height of the tree,
+    /*// EFFECTS: Return the height of the tree,
     // which equals the number of layers of nodes in the tree.
     // Return zero if the tree is empty.
     //
@@ -167,11 +167,11 @@ public:
     // The node a is on the first layer.
     // The nodes b and c are on the second layer.
     // The nodes d and e are on the third layer.
-    // The nodes f and g are on the fourth layer.
+    // The nodes f and g are on the fourth layer.*/
     int height() const;
 
     // todo: implement this
-    // EFFECTS: Print the value of each node using a pre-order traversal.
+    /*// EFFECTS: Print the value of each node using a pre-order traversal.
     // Separate each value with a space. A pre-order traversal prints the
     // current node first, then recursively visit its left subtree, and then
     // recursively visit its right subtree and so on, until the right-most
@@ -195,11 +195,11 @@ public:
     //
     // would print 4 2 7 3 8 9 5
     //
-    // An empty tree would print nothing.
+    // An empty tree would print nothing.*/
     void preOrder() const;
 
     // todo: implement this
-    // EFFECTS: Print the value of each node using a in-order traversal.
+    /*// EFFECTS: Print the value of each node using a in-order traversal.
     // Separate each {num} with a space. An in-order traversal recursively
     // visit its left subtree, then print the current node,
     // and then recursively visit its right subtree.
@@ -222,11 +222,11 @@ public:
     //
     // would print 7 2 8 3 9 4 5
     //
-    // An empty tree would print nothing.
+    // An empty tree would print nothing.*/
     void inOrder() const;
 
     // todo: implement this
-    // EFFECTS: Print the value of each node using a post-order traversal.
+    /*    // EFFECTS: Print the value of each node using a post-order traversal.
     // Separate each {num} with a space. A post-order traversal recursively
     // visit its left subtree, and then recursively visit its right subtree
     // and then print the current node.
@@ -249,11 +249,11 @@ public:
     //
     // would print 7 8 9 3 2 5 4
     //
-    // An empty tree would print nothing.
+    // An empty tree would print nothing.*/
     void postOrder() const;
 
     // todo: implement this
-    // EFFECTS: Return true if and only if for each root-to-leaf path of the tree,
+    /*// EFFECTS: Return true if and only if for each root-to-leaf path of the tree,
     // the sum of the value of all nodes along the path is greater than {sum}.
     //
     // Return false if the tree is empty
@@ -275,7 +275,7 @@ public:
     // has three root-to-leaf paths: 4->1->3, 4->1->6 and 4->5.
     // Given the input sum = 9, the path 4->5 has the sum 9, so the function
     // should return false. If the input sum = 7, since all paths have the sums
-    // greater than 7, the function should return true.
+    // greater than 7, the function should return true.*/
     bool allPathSumGreater(const int &sum) const;
 
     // todo: implement this
