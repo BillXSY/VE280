@@ -1,6 +1,12 @@
-#include "BinaryTree.h"
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <algorithm>
+
+#include "BinaryTree.h"
 
 using namespace std;
 
@@ -57,9 +63,7 @@ BinaryTree::BinaryTree(Node *_node) {
 }
 
 void NodeDeepCopy(Node *srcNode, Node *tarNode) {
-    if (!srcNode) {
-        return;
-    }
+    if (!srcNode) return;
     tarNode->setVal(srcNode->getVal());
     if (srcNode->getLeft()) {
         tarNode->setLeft(srcNode->getLeft()->getVal());
@@ -77,29 +81,27 @@ BinaryTree::BinaryTree(const BinaryTree &tree) {
 }
 
 BinaryTree::BinaryTree(std::vector<nodeValue> &source) {
-    Node *n = new Node(std::get<1>(source[0]));
-    vector<Node *> fringe;
-    fringe.push_back(n);
-    int fringeIndex = 0;
-    int srcIndex = 1;
+    /*Node *n = new Node(std::get<1>(source[0]));
+    vector<Node *> fringe = {n};
+    int fringeIndex = 0, srcIndex = 1;
     while (srcIndex < source.size() && fringeIndex < fringe.size()) {
-        Node *curr_node = fringe[fringeIndex];
+        Node *curr_node = fringe[fringeIndex++];
         if (source[srcIndex++].index() == 1) {
-            curr_node->setLeft(std::get<1>(source[srcIndex -1]));
+            curr_node->setLeft(std::get<1>(source[srcIndex - 1]));
             fringe.push_back(curr_node->getLeft());
         }
-        if (srcIndex >= source.size()) {break;}
+        if (srcIndex >= source.size()) break;
         if (source[srcIndex++].index() == 1) {
-            curr_node->setRight(std::get<1>(source[srcIndex-1]));
+            curr_node->setRight(std::get<1>(source[srcIndex - 1]));
             fringe.push_back(curr_node->getRight());
         }
-        fringeIndex++;
     }
-    this->root = n;
+    this->root = n;*/
+    this->root = this->createFromVariant(source, 0);
 }
 
 void destructor_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return;
     }
     destructor_helper(root->getLeft());
@@ -115,19 +117,44 @@ bool BinaryTree::empty() const {
     return !this->root;
 }
 
-// TODO
+Node *find_helper(Node *node, const int &key) {
+    if (!node) return nullptr;
+    if (node->getVal() == key) return node;
+    Node *left = find_helper(node->getLeft(), key);
+    if (left) return left;
+    Node *right = find_helper(node->getRight(), key);
+    if (right) return right;
+    return nullptr;
+}
+
 Node *BinaryTree::find(const int &key) const {
-    return root;
+    return find_helper(this->root, key);
 }
 
-// TODO
+string findPath_helper(Node *root, const int &value) {
+    if (!root) return "-1";
+    if (root->getVal() == value) return "";
+    string left = findPath_helper(root->getLeft(), value);
+    if (left != "-1") return "0" + left;
+    string right = findPath_helper(root->getRight(), value);
+    if (right != "-1") return "1" + right;
+    return "-1";
+}
+
 std::string BinaryTree::findPath(const int &value) const {
-    return "asdf";
+    return findPath_helper(this->root, value);
 }
 
-// TODO
 Node *BinaryTree::visitThroughPath(const std::string &path) const {
-    return root;
+    Node *currNode = this->root;
+    for (char c : path) {
+        if (c == '0' && currNode->getLeft()) {
+            currNode = currNode->getLeft();
+        } else if (c == '1' && currNode->getRight()) {
+            currNode = currNode->getRight();
+        } else return nullptr;
+    }
+    return currNode;
 }
 
 int sum_helper(Node *root) {
@@ -142,9 +169,18 @@ int BinaryTree::sum() const {
     return sum_helper(root);
 }
 
-// TODO
+int height_helper(Node *root) {
+    if (root == nullptr) {
+        return 0;
+    }
+    int height = height_helper(root->getLeft());
+    int temp = height_helper(root->getRight());
+    height = (height > temp) ? height : temp;
+    return height + 1;
+}
+
 int BinaryTree::height() const {
-    return -999;
+    return height_helper(this->root);
 }
 
 void preorder_helper(Node *root) {
@@ -192,50 +228,62 @@ void BinaryTree::postOrder() const {
     cout << endl;
 }
 
-// TODO
-int allPathSumGreater_helper(Node *root) {
-    if (root == nullptr) {
-        return 0;
-    }
+int allPathSum(Node *node) {
+    if (!node) return 0;
     int answer;
-    if (root->getLeft() == nullptr && root->getRight() == nullptr) {
+    if (!node->getLeft() && !node->getRight()) {
         answer = 0;
-    } else if (root->getLeft() != nullptr && root->getRight() == nullptr) {
-        answer = allPathSumGreater_helper(root->getLeft());
-    } else if (root->getLeft() == nullptr && root->getRight() != nullptr) {
-        answer = allPathSumGreater_helper(root->getRight());
+    } else if (node->getLeft() && !node->getRight()) {
+        answer = allPathSum(node->getLeft());
+    } else if (!node->getLeft() && node->getRight()) {
+        answer = allPathSum(node->getRight());
     } else {
-        answer = min(allPathSumGreater_helper(root->getLeft()), allPathSumGreater_helper(root->getRight()));
+        answer = min(allPathSum(node->getLeft()), allPathSum(node->getRight()));
     }
-    return root->getVal() + answer;
+    return node->getVal() + answer;
 }
 
-// TODO
 bool BinaryTree::allPathSumGreater(const int &sum) const {
-    int smallestsum = allPathSumGreater_helper(root);
-    if (smallestsum > sum) {
+    int smallestsum = allPathSum(root);
+    return (smallestsum > sum);
+}
+
+bool covered_by_helper(Node *smallTree, Node *largeTree) {
+    if (!smallTree) return true;
+    if (largeTree && smallTree->getVal() == largeTree->getVal() &&
+        covered_by_helper(smallTree->getLeft(), largeTree->getLeft()) &&
+        covered_by_helper(smallTree->getRight(), largeTree->getRight())) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
-// TODO
+// EFFECTS: Return true if this is covered by {tree}
 bool BinaryTree::operator<(const BinaryTree &tree) const {
+    return covered_by_helper(this->root, tree.root);
+}
+
+bool contained_by_helper(Node *smallTree, Node *largeTree) {
+    if (!smallTree) {
+        return true;
+    }
+    if (largeTree) {
+        return covered_by_helper(smallTree, largeTree) || contained_by_helper(smallTree, largeTree->getLeft()) ||
+               contained_by_helper(smallTree, largeTree->getRight());
+    }
     return false;
 }
 
-// TODO
+// EFFECTS: Return true if this is contained by {tree}
 bool BinaryTree::operator<<(const BinaryTree &tree) const {
-    return false;
+    return contained_by_helper(this->root, tree.root);
 }
 
-// TODO
+// EFFECTS: "=" overloading
 BinaryTree &BinaryTree::operator=(const BinaryTree &tree) {
-    this->root = new Node(1);
     NodeDeepCopy(tree.root, this->root);
+    return *this;
 }
-
 
 Node *BinaryTree::createFromVariant(const vector<nodeValue> &source, const int &rootIndex) {
     if (rootIndex >= source.size())
