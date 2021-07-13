@@ -29,8 +29,8 @@ int main() {
     root.traverse(traverseValue);
 
     for (int i : traverseValue) {
-        cout << storyProcess[i] << endl;
+        cout << storyProcess[i];
     }
-
+    cout << endl;
     return 0;
 }
