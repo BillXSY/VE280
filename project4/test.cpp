@@ -34,13 +34,16 @@ int main() {
     BinaryTree tree(source);
     treeCheck(tree);
 
-    return 0;
 
     BinaryTree waste = tree;
-    treeCheck(tree);
+//    treeCheck(waste);
 
     Node *x = tree.find(9);
     x->setLeft(100);
+    treeCheck(tree);
+
+
+    cout << tree.findPath(9) << endl;
     cout << tree.findPath(100) << endl;
 
     treeCheck(tree);
@@ -48,6 +51,11 @@ int main() {
 
     x = tree.visitThroughPath("0110");
     nodePrint(x);
+
+    tree.allPathSumGreater(5);
+
+//    return 0;
+
 
     x = tree.visitThroughPath("001");
     nodePrint(x);
