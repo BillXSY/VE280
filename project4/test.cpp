@@ -24,12 +24,18 @@ void nodePrint(Node *x) {
 }
 
 int main() {
-    BinaryTree BT(1);
-    BinaryTree BT2(BT);
-
+//    BinaryTree BT(1);
+//    BinaryTree BT2(BT);
+//    treeCheck(BT);
+//    cout << endl;
+//    treeCheck(BT2);
 
     vector<nodeValue> source = {4, 2, 5, 7, 3, "$", "@", "hey", "xm", 8, 9};
     BinaryTree tree(source);
+    treeCheck(tree);
+
+    return 0;
+
     BinaryTree waste = tree;
     treeCheck(tree);
 

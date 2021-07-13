@@ -24,7 +24,7 @@ Node *Node::getLeft() const {
 }
 
 void Node::setLeft(const int &newVal) {
-    if (!this->left) {
+    if (this->left) {
         this->left->val = newVal;
         return;
     }
@@ -37,7 +37,7 @@ Node *Node::getRight() const {
 }
 
 void Node::setRight(const int &newVal) {
-    if (!this->right) {
+    if (this->right) {
         this->right->val = newVal;
         return;
     }
@@ -61,11 +61,11 @@ void NodeDeepCopy(Node *srcNode, Node *tarNode) {
         return;
     }
     tarNode->setVal(srcNode->getVal());
-    if (!srcNode->getLeft()) {
+    if (srcNode->getLeft()) {
         tarNode->setLeft(srcNode->getLeft()->getVal());
         NodeDeepCopy(srcNode->getLeft(), tarNode->getLeft());
     }
-    if (!srcNode->getRight()) {
+    if (srcNode->getRight()) {
         tarNode->setRight(srcNode->getRight()->getVal());
         NodeDeepCopy(srcNode->getRight(), tarNode->getRight());
     }
@@ -76,9 +76,25 @@ BinaryTree::BinaryTree(const BinaryTree &tree) {
     NodeDeepCopy(tree.root, this->root);
 }
 
-//TODO
 BinaryTree::BinaryTree(std::vector<nodeValue> &source) {
-    Node *n = new Node(0);
+    Node *n = new Node(std::get<1>(source[0]));
+    vector<Node *> fringe;
+    fringe.push_back(n);
+    int fringeIndex = 0;
+    int srcIndex = 1;
+    while (srcIndex < source.size() && fringeIndex < fringe.size()) {
+        Node *curr_node = fringe[fringeIndex];
+        if (source[srcIndex++].index() == 1) {
+            curr_node->setLeft(std::get<1>(source[srcIndex -1]));
+            fringe.push_back(curr_node->getLeft());
+        }
+        if (srcIndex >= source.size()) {break;}
+        if (source[srcIndex++].index() == 1) {
+            curr_node->setRight(std::get<1>(source[srcIndex-1]));
+            fringe.push_back(curr_node->getRight());
+        }
+        fringeIndex++;
+    }
     this->root = n;
 }
 
@@ -96,17 +112,20 @@ BinaryTree::~BinaryTree() {
 }
 
 bool BinaryTree::empty() const {
-    return this->root;
+    return !this->root;
 }
 
+// TODO
 Node *BinaryTree::find(const int &key) const {
     return root;
 }
 
+// TODO
 std::string BinaryTree::findPath(const int &value) const {
     return "asdf";
 }
 
+// TODO
 Node *BinaryTree::visitThroughPath(const std::string &path) const {
     return root;
 }
@@ -123,6 +142,7 @@ int BinaryTree::sum() const {
     return sum_helper(root);
 }
 
+// TODO
 int BinaryTree::height() const {
     return -999;
 }
@@ -143,7 +163,6 @@ void BinaryTree::preOrder() const {
 }
 
 void inorder_helper(Node *root) {
-    // EFFECTS: the helper function of inorder_str
     if (root == nullptr) {
         return;
     } else {
@@ -158,60 +177,60 @@ void BinaryTree::inOrder() const {
     cout << endl;
 }
 
-void postorder_helper(Node* root) {
+void postorder_helper(Node *root) {
     if (root == nullptr) {
         return;
-    }
-    else {
+    } else {
         postorder_helper(root->getLeft());
         postorder_helper(root->getRight());
         cout << root->getVal() << " ";
     }
 }
+
 void BinaryTree::postOrder() const {
     postorder_helper(root);
     cout << endl;
 }
 
-int allPathSumGreater_helper(Node* root) {
-    // EFFECTS: the helper function of allPathSumGreat, return the smallest sum
+// TODO
+int allPathSumGreater_helper(Node *root) {
     if (root == nullptr) {
         return 0;
     }
     int answer;
     if (root->getLeft() == nullptr && root->getRight() == nullptr) {
         answer = 0;
-    }
-    else if (root->getLeft() != nullptr && root->getRight() == nullptr) {
+    } else if (root->getLeft() != nullptr && root->getRight() == nullptr) {
         answer = allPathSumGreater_helper(root->getLeft());
-    }
-    else if (root->getLeft() == nullptr && root->getRight() != nullptr) {
+    } else if (root->getLeft() == nullptr && root->getRight() != nullptr) {
         answer = allPathSumGreater_helper(root->getRight());
-    }
-    else {
+    } else {
         answer = min(allPathSumGreater_helper(root->getLeft()), allPathSumGreater_helper(root->getRight()));
     }
     return root->getVal() + answer;
 }
 
+// TODO
 bool BinaryTree::allPathSumGreater(const int &sum) const {
     int smallestsum = allPathSumGreater_helper(root);
     if (smallestsum > sum) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
 
+// TODO
 bool BinaryTree::operator<(const BinaryTree &tree) const {
     return false;
 }
 
+// TODO
 bool BinaryTree::operator<<(const BinaryTree &tree) const {
     return false;
 }
 
+// TODO
 BinaryTree &BinaryTree::operator=(const BinaryTree &tree) {
     this->root = new Node(1);
     NodeDeepCopy(tree.root, this->root);

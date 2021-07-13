@@ -6,3 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/root/VE280/project4/BinaryTree.cpp
+BinaryTree.h
+/root/VE280/project4/BinaryTree.h
+iostream
+-
+vector
+-
+
+/root/VE280/project4/BinaryTree.h
+string
+-
+vector
+-
+variant
+-
+
+/root/VE280/project4/test.cpp
+iostream
+-
+BinaryTree.h
+/root/VE280/project4/BinaryTree.h
+vector
+-
+
