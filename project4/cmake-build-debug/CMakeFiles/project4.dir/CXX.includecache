@@ -6,27 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/root/VE280/project4/BinaryTree.cpp
-BinaryTree.h
-/root/VE280/project4/BinaryTree.h
+/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.cpp
 iostream
 -
 vector
 -
+fstream
+-
+sstream
+-
+string
+-
+cstdlib
+-
+algorithm
+-
+BinaryTree.h
+/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
 
-/root/VE280/project4/BinaryTree.h
+/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h
 string
 -
 vector
 -
 variant
--
-
-/root/VE280/project4/test.cpp
-iostream
--
-BinaryTree.h
-/root/VE280/project4/BinaryTree.h
-vector
 -
 

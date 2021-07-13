@@ -8,95 +8,93 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/root/VE280/project4/cmake-build-debug"/>
+				<Option working_dir="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/root/VE280/project4/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/root/VE280/project4/cmake-build-debug"/>
+				<Option working_dir="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project4">
-				<Option output="/root/VE280/project4/cmake-build-debug/project4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/VE280/project4/cmake-build-debug"/>
+				<Option output="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/project4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/VE280/project4/."/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/Users/bill/CLionProjects/VE280/VE280/project4/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 project4"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 project4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project4/fast">
-				<Option output="/root/VE280/project4/cmake-build-debug/project4" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/root/VE280/project4/cmake-build-debug"/>
+				<Option output="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/project4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/root/VE280/project4/."/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/Users/bill/CLionProjects/VE280/VE280/project4/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 project4/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/root/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 project4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/VE280/project4/BinaryTree.cpp">
+		<Unit filename="/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.cpp">
 			<Option target="project4"/>
 		</Unit>
-		<Unit filename="/root/VE280/project4/BinaryTree.h">
+		<Unit filename="/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.h">
 			<Option target="project4"/>
 		</Unit>
-		<Unit filename="/root/VE280/project4/NodeInfo.h">
+		<Unit filename="/Users/bill/CLionProjects/VE280/VE280/project4/NodeInfo.h">
 			<Option target="project4"/>
 		</Unit>
-		<Unit filename="/root/VE280/project4/test.cpp">
+		<Unit filename="/Users/bill/CLionProjects/VE280/VE280/project4/test.cpp">
 			<Option target="project4"/>
 		</Unit>
-		<Unit filename="/root/VE280/project4/CMakeLists.txt">
+		<Unit filename="/Users/bill/CLionProjects/VE280/VE280/project4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
