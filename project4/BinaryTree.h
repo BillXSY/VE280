@@ -226,7 +226,7 @@ public:
     void inOrder() const;
 
     // todo: implement this
-    /*    // EFFECTS: Print the value of each node using a post-order traversal.
+    /* // EFFECTS: Print the value of each node using a post-order traversal.
     // Separate each {num} with a space. A post-order traversal recursively
     // visit its left subtree, and then recursively visit its right subtree
     // and then print the current node.

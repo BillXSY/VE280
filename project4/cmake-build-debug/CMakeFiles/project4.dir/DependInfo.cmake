@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/bill/CLionProjects/VE280/VE280/project4/BinaryTree.cpp" "/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/CMakeFiles/project4.dir/BinaryTree.cpp.o"
-  "/Users/bill/CLionProjects/VE280/VE280/project4/dbc.cpp" "/Users/bill/CLionProjects/VE280/VE280/project4/cmake-build-debug/CMakeFiles/project4.dir/dbc.cpp.o"
+  "/root/VE280/project4/BinaryTree.cpp" "/root/VE280/project4/cmake-build-debug/CMakeFiles/project4.dir/BinaryTree.cpp.o"
+  "/root/VE280/project4/dbc.cpp" "/root/VE280/project4/cmake-build-debug/CMakeFiles/project4.dir/dbc.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
