@@ -1,3 +1,0 @@
-/root/VE280/project4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/root/VE280/project4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/root/VE280/project4/cmake-build-debug/CMakeFiles/project4.dir

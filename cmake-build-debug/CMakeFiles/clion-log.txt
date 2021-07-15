@@ -1,1 +1,0 @@
-在 /Users/bill/CLionProjects/VE280/VE280 中找不到 CMakeLists.txt 选择 CMakeLists.txt

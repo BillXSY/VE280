@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/project4.dir/BinaryTree.cpp.o CMakeFiles/project4.dir/dbc.cpp.o  -o project4 
