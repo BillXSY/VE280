@@ -21,7 +21,7 @@ void List<T>::print()
 
 template<class T>
 void List<T>::removeAll() {
-    while (this->isEmpty()) {
+    while (!this->isEmpty()) {
         this->removeFront();
     }
 }
@@ -52,10 +52,10 @@ void List<T>::insertBack(T val) {
     newNode->next = nullptr;
     newNode->val = val;
     if (isEmpty()) {
-        std::cout << val << " is added to an empty list!\n";
+//        std::cout << val << " is added to an empty list!\n";
         first = last = newNode;
     } else {
-        std::cout << val << " is added to the list!\n";
+//        std::cout << val << " is added to the list!\n";
         last->next = newNode;
         last = newNode;
     }
@@ -69,7 +69,7 @@ T List<T>::removeFront() {
     Node_t<T> *victim = this->first;
     first = victim->next;
     T rslt = victim->val;
-    delete victim;
+//    delete victim;
     return rslt;
 }
 
@@ -96,7 +96,6 @@ List<T> &List<T>::operator=(const List &l) {
         copyFrom(l);
     }
     return *this;
-
 }
 
 template<class T>
