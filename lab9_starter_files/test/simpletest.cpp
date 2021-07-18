@@ -13,30 +13,37 @@ int main() {
         la.insertBack(4);
         la.insertBack(1);
         la.insertBack(3); // a = 3145
+        la.print();
 
-        lb.insertBack(2);
-        lb.insertBack(4);
-        lb.insertBack(1);
-        lb.insertBack(3);
-        lb.removeFront(); // b = 314
+        lb = la;
+        lb.print();
 
-        std::cout << isLarger(la, lb) << '\n';
 
-        List<int> ab_sum(la);
-        ab_sum.print();
-        ab_sum = add(la, lb);
-        ab_sum.print();
-
-        List<bool> lc;
-        lc.insertBack(true);
-        lc.insertBack(false);
-        lc.insertBack(true);
-
-        List<bool> ld(lc);
-        ld.removeFront();
-        ld.print();
+//        lb.insertBack(2);
+//        lb.insertBack(4);
+//        lb.insertBack(1);
+//        lb.insertBack(3);
+//        lb.removeFront(); // b = 314
+//        lb.print();
+//
+//        std::cout << isLarger(la, lb) << '\n';
+//
+//
+//        List<int> ab_sum(la);
+//        ab_sum.print();
+//        ab_sum = add(la, lb);
+//        ab_sum.print();
+//
+//        List<bool> lc;
+//        lc.insertBack(true);
+//        lc.insertBack(false);
+//        lc.insertBack(true);
+//
+//        List<bool> ld(lc);
+//        ld.removeFront();
+//        ld.print();
     }
-    catch(emptyList){
+    catch(EmptyList){
         std::cout << "Remove from empty list!\n";
     }
 
