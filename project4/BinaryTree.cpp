@@ -81,29 +81,11 @@ BinaryTree::BinaryTree(const BinaryTree &tree) {
 }
 
 BinaryTree::BinaryTree(std::vector<nodeValue> &source) {
-    /*Node *n = new Node(std::get<1>(source[0]));
-    vector<Node *> fringe = {n};
-    int fringeIndex = 0, srcIndex = 1;
-    while (srcIndex < source.size() && fringeIndex < fringe.size()) {
-        Node *curr_node = fringe[fringeIndex++];
-        if (source[srcIndex++].index() == 1) {
-            curr_node->setLeft(std::get<1>(source[srcIndex - 1]));
-            fringe.push_back(curr_node->getLeft());
-        }
-        if (srcIndex >= source.size()) break;
-        if (source[srcIndex++].index() == 1) {
-            curr_node->setRight(std::get<1>(source[srcIndex - 1]));
-            fringe.push_back(curr_node->getRight());
-        }
-    }
-    this->root = n;*/
     this->root = this->createFromVariant(source, 0);
 }
 
 void destructor_helper(Node *root) {
-    if (!root) {
-        return;
-    }
+    if (!root) return;
     destructor_helper(root->getLeft());
     destructor_helper(root->getRight());
     delete root;
@@ -158,7 +140,7 @@ Node *BinaryTree::visitThroughPath(const std::string &path) const {
 }
 
 int sum_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return 0;
     } else {
         return root->getVal() + sum_helper(root->getLeft()) + sum_helper(root->getRight());
@@ -170,7 +152,7 @@ int BinaryTree::sum() const {
 }
 
 int height_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return 0;
     }
     int height = height_helper(root->getLeft());
@@ -184,7 +166,7 @@ int BinaryTree::height() const {
 }
 
 void preorder_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return;
     } else {
         cout << root->getVal() << " ";
@@ -199,7 +181,7 @@ void BinaryTree::preOrder() const {
 }
 
 void inorder_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return;
     } else {
         inorder_helper(root->getLeft());
@@ -214,7 +196,7 @@ void BinaryTree::inOrder() const {
 }
 
 void postorder_helper(Node *root) {
-    if (root == nullptr) {
+    if (!root) {
         return;
     } else {
         postorder_helper(root->getLeft());

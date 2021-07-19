@@ -18,7 +18,6 @@ int main(int argc, char *argv[]) {
     }
     string line;
     getline(iFile, line);
-//    cout << line << endl;
     auto *BT = new BinaryTree(0);
     int NodeNum = 0;
 
@@ -29,7 +28,6 @@ int main(int argc, char *argv[]) {
             if (BT->visitThroughPath(w + c)) {
                 w += c;
             } else {
-//                cout << endl << w << " + " << c;
                 Node *n = BT->visitThroughPath(w);
                 if (c == '1') {
                     n->setRight(++NodeNum);
