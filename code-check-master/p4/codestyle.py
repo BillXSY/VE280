@@ -11,7 +11,7 @@ import clang.format
 
 def main(project_dir, silent=False):
     # Formatting initialization
-    files = ['binaryTree.cpp', 'dbc.cpp']
+    files = ['BinaryTree.cpp', 'BinaryTree.h', 'NodeInfo.h', 'dbc.cpp']
     format_dir = os.path.join(project_dir, 'formatted')
     main_cpp_files = ['dbc.cpp']
 
