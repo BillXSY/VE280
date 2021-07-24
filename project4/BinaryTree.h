@@ -272,31 +272,4 @@ public:
     //            3   6
     //           / \ / \
     //
-    // has three root-to-leaf paths: 4->1->3, 4->1->6 and 4->5.
-    // Given the input sum = 9, the path 4->5 has the sum 9, so the function
-    // should return false. If the input sum = 7, since all paths have the sums
-    // greater than 7, the function should return true.*/
-    bool allPathSumGreater(const int &sum) const;
-
-    // todo: implement this
-    // EFFECTS: Return true if this is covered by {tree}
-    bool operator<(const BinaryTree &tree) const;
-
-    // todo: implement this
-    // EFFECTS: Return true if this is contained by {tree}
-    bool operator<<(const BinaryTree &tree) const;
-
-    // todo: implement this
-    // EFFECTS: "=" overloading
-    BinaryTree &operator=(const BinaryTree &tree);
-
-private:
-    // EFFECTS: Create a tree recursively from an array, following the rule of building a complete binary tree.
-    // Rule: Suppose the index starts at 0, the left child of the nth element in the array is the (2*(n+1)-1)th element.
-    // The right child of the nth element in the array is the (2*(n+1))th element
-    // If source[rootIndex] is a string(its value does not matter), it will create an empty node
-    Node *createFromVariant(const std::vector<nodeValue> &source, const int &rootIndex);
-};
-
-
-#endif
+    // has three root-to-leaf 
