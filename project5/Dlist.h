@@ -5,15 +5,15 @@ class EmptyList {
     // OVERVIEW: an exception class
 };
 
-template <class T>
+template<class T>
 class Dlist {
     // OVERVIEW: contains a double-ended list of Objects
 
-   public:
+public:
     // Operational methods
 
     bool isEmpty() const;
-    // EFFECTS: returns true if list is empy, false otherwise
+    // EFFECTS: returns true if list is empty, false otherwise
 
     void insertFront(T *op);
     // MODIFIES this
@@ -34,8 +34,8 @@ class Dlist {
     //         throws an instance of EmptyList if empty
 
     // This method is provided for part 2. Just skip it.
-    friend std::ostream& operator<< (std::ostream& os, const Dlist& dl) {
-        for(auto i = dl.first; i != NULL ; i = i->next) {
+    friend std::ostream &operator<<(std::ostream &os, const Dlist &dl) {
+        for (auto i = dl.first; i != NULL; i = i->next) {
             os << (*(i->op)) << ' ';
         }
         return os;
@@ -47,7 +47,7 @@ class Dlist {
     Dlist &operator=(const Dlist &l);  // assignment operator
     ~Dlist();                          // destructor
 
-   private:
+public:
     // A private type
     struct node {
         node *next; // (NULL if none)
