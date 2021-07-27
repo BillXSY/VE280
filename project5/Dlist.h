@@ -4,6 +4,7 @@
 class EmptyList {
     // OVERVIEW: an exception class
 };
+#include <iostream>
 
 template<class T>
 class Dlist {
@@ -47,7 +48,7 @@ public:
     Dlist &operator=(const Dlist &l);  // assignment operator
     ~Dlist();                          // destructor
 
-public:
+private:
     // A private type
     struct node {
         node *next; // (NULL if none)
