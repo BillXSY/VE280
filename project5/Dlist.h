@@ -4,7 +4,6 @@
 class EmptyList {
     // OVERVIEW: an exception class
 };
-#include <iostream>
 
 template<class T>
 class Dlist {
