@@ -15,8 +15,8 @@ def main(project_dir, silent=False):
     # mute clang-tidy check
     # clang_tidy_score = 0
 
-    files_total = [['call.cpp'], ['cleaner.cpp']]
-    main_function_name_total = ['main__call.cpp', 'main__cleaner.cpp']
+    files_total = ['sam.cpp']
+    main_function_name_total = ['sam.cpp']
 
     for i in range(len(files_total)):
         files = files_total[i]
@@ -55,7 +55,7 @@ def main(project_dir, silent=False):
             clang_check_score += 2
         elif poorly_commented_cnt == 1: # one poorly commented function
             clang_check_score += 1
-        
+
         if not silent:
             print("--------------------")
             print("clang-check summary:")
@@ -90,7 +90,7 @@ def main(project_dir, silent=False):
     # print final result
     # print('%d,%d' % (clang_check_score, clang_tidy_score))
     print('%d' % (clang_check_score))
-    
+
 
 
 # driver
