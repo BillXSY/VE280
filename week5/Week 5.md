@@ -24,7 +24,7 @@ graph TD;
 
 ### Compare: Type Coercion
 
-Consider the following examples.
+# Consider the following examples.
 
 * Example 1: 
 
@@ -106,7 +106,7 @@ The accessibility of members are as follows:
 |      specifier      | private | protected | public |
 | :-----------------: | :-----: | :-------: | :----: |
 |      **self**       |   Yes   |    Yes    |  Yes   |
-| **derived classes** |   No    |    No     |  Yes   |
+| **derived classes** |   No    |    Yes    |  Yes   |
 |    **outsiders**    |   No    |    No     |  Yes   |
 
 When declaring inheritance with access specifiers, the status of member in the derived classes are as follows:
